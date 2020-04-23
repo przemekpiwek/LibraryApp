@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Library App</title>
+    <link rel="stylesheet" href="/main.css">
+
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Library App</h1>
+        </header>
+        <section class="prompt">
+            <p>Welcome to a library application I've created using Vanilla JS, CSS, and HTML. As the name suggests, the app tracks the books you've read or plan to read.</p>
+            <p><b>To get started, please enter the requested information below.</b></p>
+        </section>
+        <main>
+            <form>
+                <label id="blob" for="title">Book Title</label>
+                <input type="text" id="booktitle" placeholder="" required name="title"> 
+
+                <label for="author">Author</label>
+                <input type="text" id="bookauthor" placeholder="" required name="author"> 
+
+                <label for="pages">Pages</label>
+                <input type="text" id="bookpages" placeholder="" required name="pages"> 
+
+                <button id="button">Add New Book</button>
+            </form> 
+            <div class= "bookshelf" id="bookshelf">
+            </div>
+        </main>
+    </div>
+    <script src="/main.js"></script>
+</body>
+</html>

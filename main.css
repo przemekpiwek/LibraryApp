@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,500,600,700&display=swap');
+
+:root{
+    --text-margin: 30px;
+    --item-margin: 30px;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    background: #0F0D1A;
+    color: #DAD8E6;
+    font-family: 'Inconsolata', sans-serif;
+}
+div.container{
+    margin: 50px 150px;
+}
+header h1{
+    margin-left: var(--text-margin);
+    font-size: 3em;
+    margin-bottom: var(--item-margin);
+}
+section.prompt{
+    background: #111421;
+    color: #37A8AE;
+    padding: var(--text-margin);
+    margin-bottom: var(--item-margin);
+    line-height: 1.5;
+}
+section.prompt p:nth-child(2){
+    margin-bottom: 0px;
+}
+p{
+    margin: 0px;
+    margin-bottom: 20px;
+}
+main{
+    display: flex;
+    flex-direction: row;
+}
+form{
+    flex: 2;
+    border-radius: 2px;
+    background: #14132C;
+    padding: var(--text-margin);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    max-height: 300px;
+}
+button{
+    background: #4547E0;
+    width: 100%;
+    padding: 10px 30px;
+    border: 2px solid #4547E0;
+    font-size: 1em;
+    border-radius: 2px;
+    color:white;
+    margin-top:40px;
+}
+input:focus, button:focus{
+    outline: 0px;
+    border: 2px solid rgb(139, 141, 243);
+}
+button:hover{
+    cursor: pointer;
+}
+div.bookshelf{
+    flex: 4;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: var(--item-margin);
+    align-self: flex-start
+}
+.card{
+    position: relative;
+    background: #14132C;
+    border-radius: 2px;
+    color: white;
+    padding: var(--text-margin);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.card>h1{
+    text-align: center;
+    display:inline-block;
+    color: #E8DA7F;
+}
+.card>h1::before{
+    content: '---';
+    padding-right: 10px;
+}
+.card>h1::after{
+    content: '---';
+    padding-left: 10px;
+}
+.card>h2{
+    text-align: center;
+    font-size: 1.2em;
+    padding: 10px 0 10px 0;
+    color: #E8DA7F;
+}
+.card>h3::before{
+    content:'Pages:';
+    font-size: 1em;
+}
+.card>h3{
+    position: absolute;
+    font-size: .8em;
+    left: 5%;
+    top: 80%;
+    color: rgba(69, 72, 224, 0.527);
+}
+
+input{
+    background: #0F0D1A;
+    border: 2px solid #2C2C81;
+    border-radius: 2px;
+    height: 30px;
+    color: white;
+    padding-left: 5px;
+    width: 320px;
+}
+label{
+    margin: 10px 0;
+    width: 100%;
+}
